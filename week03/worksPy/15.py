@@ -1,0 +1,7 @@
+print("열심히 ", end="^^")
+print("행복하게 ", end="^^")
+print("나의 의지대로 ", end="^^")
+print("누가 뭐라하든 ", end="^^")
+print("의심하지 않고 ", end="^^")
+print("나의 길을 ", end="^^")
+print("가자...")

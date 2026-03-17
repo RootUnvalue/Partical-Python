@@ -1,0 +1,11 @@
+print("우리 모두가")
+print("힘든시기를")
+print("힘내서")
+print("잘")
+print("이겨 내 봅시다")
+
+print("우리 모두가", end=" ")
+print("힘든시기를", end=" ")
+print("힘내서", end=" ")
+print("잘", end=" ")
+print("이겨 내 봅시다")
