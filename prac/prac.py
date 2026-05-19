@@ -1,28 +1,33 @@
-#24
-def sum_num(a, b):
-    '''a, b 두 개의 매게변수를 받고 합을 반환하는 함수'''
-    return a + b
+#11
+passengers = []
+p_out = []
 
-def sub_num(a, b):
-    '''a, b 두 개의 매게변수를 받고 차를 반환하는 함수'''
-    return a - b
+#11-1
+passengers.append([1,1,1,1,1])
 
-def div_num(a, b):
-    '''a, b 두 개의 매게변수를 받고 나눗셈 결과를 반환하는 함수'''
-    return a / b
+#11-2
+passengers.append([1,1,1])
 
-def mul_num(a, b):
-    '''a, b 두 개의 매게변수를 받고 곱을 반환하는 함수'''
-    return a * b
 
-a, b = map(int, input('두 수를 입력하세요: ').split())
-print(a, ' + ', b, ' = ', sum_num(a, b))
-print(a, ' - ', b, ' = ', sub_num(a, b))
-print(a, ' / ', b, ' = ', div_num(a, b))
-print(a, ' * ', b, ' = ', mul_num(a, b))
+#11-3
+passengers[-1].pop(-1)
+passengers[-1].pop(-1)
+# passengers.append([])
 
-print()
-print(sum_num.__doc__)
-print(sub_num.__doc__)
-print(div_num.__doc__)
-print(mul_num.__doc__)
+
+#11-4
+passengers.append([1,1,1,1])
+
+
+
+print("승객 리스트: {}".format(passengers))
+
+s = 0
+for i in passengers:
+    for j in i:
+        s = s + 1
+print("총 승객: {}".format(s))
+
+
+print("처음부터 2개의 승객 데이터: {}" .format(passengers[:2]))
+print("마지막 2개의 승객 데이터: {}" .format(passengers[-2:]))
